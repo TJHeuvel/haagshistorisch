@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TEST</title>
+    <link rel='stylesheet' type='text/css' href='styles/style.css' />
+    <script src='https://aframe.io/releases/1.0.3/aframe.min.js'></script>
+    <!--script src='scripts/main.js'></script-->
+    <script src='scripts/nav-point.js'></script>
+    <script src='scripts/hover-color.js'></script>
+    <script src='scripts/look-sound.js'></script>
+    <script src='scripts/day-night.js'></script>
+    <script src='scripts/camera-fade.js'></script>
+    <script src='scripts/sprite.js'></script>
+    <script src='scripts/vr-only.js'></script>
+
+    <script src="scripts/external/aframe-curve-component.min.js"></script>
+    <script src="scripts/external/aframe-alongpath-component.js"></script>
+
+    <script src="scripts/external/aframe-spritesheet-component.js"></script>
+    <script src="scripts/external/aframe-look-at-billboard-component.min.js"></script>
+  </head>
+  <body>
+
+    <script>
+    
+    </script>
+
+    <style>
+      .centeraframeintro {
+  margin: auto;
+  width: 100%;
+  height: 75%;
+  <!--border: 3px solid #73AD21;-->
+  padding: 10px;
+      }
+      .centertext {
+        margin: 0 auto;
+        text-align:center; 
+        width:100%; 
+        height:100%; 
+        position:absolute; 
+        color:white; 
+        font-weight:bolder; 
+        font-family: LabGrotesque,helvetica,sans-serif; 
+        font-size:24px;
+      }
+      .centertext > a {
+        color:white;
+        display:block;
+        font-size:20px;
+        text-transform:initial;
+      }
+    </style>
+
+
+      <div class='centeraframeintro'>
+    <a-scene stats>
+      <a-assets>
+
+          <a-asset-item id="auto_model" src="assets/auto.obj"></a-asset-item>
+          <img id="auto_tex" src="assets/autodag.jpg"></img>
+      </a-assets>
+      
+  <a-entity  
+        id='auto'
+        obj-model='obj: #auto_model' 
+        position='0 0 0'
+        scale='1 1 1'        
+        material='src: #auto_tex; shader: flat; fog: false;'>
+  </a-entity>   
+
+      <a-sky color="#6495ed"></a-sky>
+      <a-camera cursor='rayOrigin:mouse' camera-fade id='rig' raycaster='objects: [collider]'>
+        <a-entity
+  animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: .5 .5 .5"
+  animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: .5 .5 .5; to: 0.1 0.1 0.1"
+  animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: .5 .5 .5"
+  cursor="fuse: true;"
+  material="color: black; shader: flat; transparent:true; opacity:.5"
+  position="0 0 -1"
+  geometry="primitive: ring" vr-only></a-entity>
+
+      </a-camera>
+
+    </a-scene>
+  </div>
+
+    <nav>
+        <a href='#abc'></a>
+    </nav>
+
+      <div class='centertext' style=''></div>
+
+        <div class='btnAudio'></div>
+  </body>
+</html>

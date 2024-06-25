@@ -1,0 +1,180 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 22.04.2020 11:53:06
+
+mtllib boomlinkstakken.mtl
+
+#
+# object boomlinkstak03
+#
+
+v  23.8646 6.3085 19.3715
+v  25.1200 5.3776 17.1309
+v  24.4309 7.6596 15.7966
+v  23.1755 8.5906 18.0372
+# 4 vertices
+
+vn 0.8516 0.4313 0.2979
+# 1 vertex normals
+
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 0.0000 1.0000 0.0000
+# 4 texture coords
+
+g boomlinkstak03
+usemtl Tree
+s off
+f 1/1/1 2/2/1 3/3/1 4/4/1 
+# 1 polygons
+
+#
+# object boomlinkstak01
+#
+
+v  23.8799 6.5850 17.1040
+v  24.1859 8.0234 19.4062
+v  23.9633 10.3457 17.9849
+v  23.6573 8.9073 15.6826
+# 4 vertices
+
+vn -0.9904 -0.0104 0.1381
+# 1 vertex normals
+
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 0.0000 1.0000 0.0000
+# 4 texture coords
+
+g boomlinkstak01
+usemtl Tree
+s off
+f 5/5/2 6/6/2 7/7/2 8/8/2 
+# 1 polygons
+
+#
+# object boomlinkstak04
+#
+
+v  23.0317 7.6091 18.7654
+v  25.2665 6.1879 18.0957
+v  24.5380 6.2822 15.4645
+v  22.3032 7.7034 16.1342
+# 4 vertices
+
+vn 0.5096 0.8533 -0.1105
+# 1 vertex normals
+
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 0.0000 1.0000 0.0000
+# 4 texture coords
+
+g boomlinkstak04
+usemtl Tree
+s off
+f 9/9/3 10/10/3 11/11/3 12/12/3 
+# 1 polygons
+
+#
+# object Plane023
+#
+
+v  25.7243 5.7890 18.0810
+v  23.7902 6.7574 18.9175
+v  23.7105 8.1792 17.0871
+v  25.6445 7.2108 16.2506
+# 4 vertices
+
+vn 0.5507 0.6706 0.4969
+# 1 vertex normals
+
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 0.0000 1.0000 0.0000
+# 4 texture coords
+
+g Plane023
+usemtl Tree
+s off
+f 16/16/4 15/15/4 14/14/4 13/13/4 
+# 1 polygons
+
+#
+# object boomlinkstak02
+#
+
+v  25.5606 6.0867 17.6554
+v  24.2070 7.1429 19.2143
+v  23.8742 8.8984 17.7360
+v  25.2278 7.8422 16.1771
+# 4 vertices
+
+vn -0.7992 -0.4686 -0.3765
+# 1 vertex normals
+
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 0.0000 1.0000 0.0000
+# 4 texture coords
+
+g boomlinkstak02
+usemtl Tree
+s off
+f 17/17/5 18/18/5 19/19/5 20/20/5 
+# 1 polygons
+
+#
+# object boomlinkstak05
+#
+
+v  25.5863 5.1220 18.6779
+v  21.9036 7.2662 18.2536
+v  21.9833 6.8687 15.5521
+v  25.6661 4.7245 15.9763
+# 4 vertices
+
+vn 0.5096 0.8533 -0.1105
+# 1 vertex normals
+
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 0.0000 1.0000 0.0000
+# 4 texture coords
+
+g boomlinkstak05
+usemtl Tree
+s off
+f 24/24/6 23/23/6 22/22/6 21/21/6 
+# 1 polygons
+
+#
+# object boomlinkstak006
+#
+
+v  25.1639 6.8882 20.3379
+v  24.0559 6.5050 16.8653
+v  25.1718 9.9185 16.1325
+v  26.2797 10.3017 19.6052
+# 4 vertices
+
+vn -0.9033 0.3489 0.2497
+# 1 vertex normals
+
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 0.0000 1.0000 0.0000
+# 4 texture coords
+
+g boomlinkstak006
+usemtl Tree
+s off
+f 28/28/7 27/27/7 26/26/7 25/25/7 
+# 1 polygons
+

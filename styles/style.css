@@ -1,0 +1,225 @@
+body {
+	font-family: BreveText,helvetica,sans-serif;
+	overflow-x:hidden;
+	margin:0;
+}
+nav {
+	margin:0 8;
+}
+
+p {			
+	line-height: 1.67em;
+	letter-spacing: .006em;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: none;
+	color:#1a1a1a;
+	margin-bottom:1.6em
+}
+h1,h2 {	
+	font-family: LabGrotesque,helvetica,sans-serif;
+	margin:10px 0px;
+}
+h2 {	
+	font-size: 1.5em;
+	line-height: 1em;
+	letter-spacing: normal;
+	font-family: LabGrotesque,helvetica,sans-serif;
+	font-weight: 900;
+	font-style: normal;		
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+sub {		
+	line-height: 1.67em;
+	letter-spacing: .006em;
+	font-weight: 400;
+	color:#1a1a1a;
+	margin-bottom:1.6em
+	font-style: italic;			
+	text-align: center;
+	text-transform: uppercase;
+	display:block;
+
+}
+
+.articleContainer article{  
+ 	margin-top:20px;	
+}
+
+nav {
+	text-align:center;
+	padding:20px 0px;
+}
+
+a:link, a:visited, a:active {
+  color: grey;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+.center {
+	margin: 0 auto;
+	width:50vw;
+}
+@media only screen and (max-width: 1080px) {
+	.center {
+		width:80vw;
+	}
+	.startScreen {
+		padding-top:60px !important;
+	}
+}
+/* Artikels zijn standaard onzichtbaar */
+.articleContainer > article {
+	visibility: hidden;
+	display:none;
+}
+/* Behalve degene die actief is! */
+.articleContainer > article.active {
+	visibility: visible;
+	display:block;
+}
+
+nav>a.active {
+	font-weight:bold;
+}
+
+.onTopOfAFrame {
+	position:absolute;
+	z-index:1;
+}
+.btnBar {
+	z-index: 2;
+	bottom:10px;
+	right:10px;
+
+	display:none;
+}
+
+.loaded > .btnBar {
+	display:block;
+} 
+
+.btn {
+	z-index:2;
+    cursor:hand;
+    touch-action: manipulation;
+    width: 38px;
+    height: 38px;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    border-radius: 50%;
+    border: 2px solid #CCC;
+    background-color: #FFF;
+    margin:5px;	
+
+    font-weight: bolder;
+    text-align: center;
+	line-height:38px;
+}
+.btn:active {
+	border-color:red;	
+}
+
+.btnAudio {
+    background-image: url(../images/audio.svg);
+}
+.btnAudio.mute {
+    background-image: url(../images/mute.svg);
+}
+.btnAR { display:none; }
+
+.btnVR {
+    background-image: url(../images/vr.svg);
+}
+
+.btnScroll {
+    background-image: url(../images/arrow-down.svg);
+    background-size: 50% 50% !important;
+
+    left: 50vw;
+    position: fixed;
+    bottom: 20px;
+    transition:transform .3s ease-in-out;
+}
+.btnScroll.top {
+    transform: rotate(180deg);	
+}
+.onTopOfAFrame img {
+	display:initial;
+}
+
+.aframeContainer {		
+	height:70%;
+}
+.startScreen {
+	width:100%;
+	margin:0 auto;
+	background:#FFF;
+	position:absolute;
+	top:0px;
+	min-height:800px;
+	height:100%;
+	padding-top:20px;
+}
+nav .btnLanguage {	
+    display: inline;
+    padding: 9px 7px;	
+}
+.startScreen .btnLanguage {
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+
+.tutorial p {
+  display: flex;
+  align-items: center
+}
+.startScreen .colofon p {
+	display:initial;
+}
+.startScreen img {
+	display:block;
+}
+
+body.en .nl {
+	display:none;
+}
+body.nl .en {
+	display:none;
+}
+
+.roundBtn {
+	width:75px;
+	height:75px;
+	background:#FFF;
+	border-radius:50%;
+	
+	display: inline-block;
+	text-align:center;
+	vertical-align: middle;
+
+	line-height:75px;
+	margin:0 auto;
+	border: 2px solid #CCC;
+
+	color:#000;
+	text-decoration: none;
+	font-weight: bolder;
+}
+/* a-hidden didnt work? */
+.hide-canvas {}
+	
+.hide-canvas canvas {
+	display:none;
+}

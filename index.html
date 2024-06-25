@@ -1,0 +1,503 @@
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='styles/style.css' />
+
+		<script src='https://aframe.io/releases/1.0.3/aframe.min.js'></script>
+		<script src='scripts/main.js'></script>
+		<script src='scripts/nav-point.js'></script>
+		<script src='scripts/hover-color.js'></script>
+		<script src='scripts/look-sound.js'></script>
+		<script src='scripts/day-night.js'></script>
+    	<script src='scripts/camera-fade.js'></script>
+    	<!--script src='scripts/sprite.js'></script-->
+    	<script src='scripts/vr-only.js'></script>
+    	<script src='scripts/place-at-end-of-raycast.js'></script>
+
+		<script src="scripts/external/aframe-curve-component.min.js"></script>
+		<script src="scripts/external/aframe-alongpath-component.js"></script>
+
+		<script src="scripts/external/aframe-spritesheet-component.js"></script>  	
+
+		<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no, minimal-ui" />
+		<meta name="HandheldFriendly" content="true">
+
+	</head>
+	
+	<body class='nl'> <!-- dont add another class, it breaks the code! -->			
+		<nav>			
+			<a btnStartGame href='#start'>Start</a> -
+			<a btnStartGame href='#geschiedenis'>Geschiedenis</a> -
+			<a btnStartGame href='#ontwerp'>Ontwerp</a> -
+			<a btnStartGame href='#maquette1'>Maquette</a> -				
+			<a btnStartGame href='#monument'>Monument</a> -
+			<a btnStartGame href='#monumentinterieur'>Interieur Monument</a> -		
+			<a btnStartGame href='#uitzicht'>Het Uitzicht</a> -			
+			<a btnStartGame href='#vredespaleis'>Vredespaleis</a> -		
+			<a btnStartGame href='#musschenberg'>Musschenberg</a>				
+		</nav>		
+		
+		<div class='aframeContainer'>
+			<include src='aframe.html'>Loading...</include>
+		</div>
+
+		<div class='startScreen'>
+			<div class='center'>				
+				<div class='btn btnLanguage'><span class='nl'>EN</span><span class='en'>NL</span></div>			
+				<div class='articleContainer nl'><!-- NL -->			
+	
+					<h2>Wereldhoofdstad van het Internationalisme</h2>
+					<sub>Nooit Gebouwd Den Haag</sub>
+					<p>Welkom in de (nooit gebouwde) Wereldhoofdstad van het
+					Internationalisme In 1905 bedacht de pacifistische arts Pieter Eijkman een
+					spectaculair plan voor een Wereldhoofdstad van het Internationalisme. Een
+					compleet nieuwe stad in de duinen bij Den Haag. Deze stad zou h&eacute;t
+					centrum voor internationale, wetenschappelijke samenwerking worden
+					 een &#x2018;Athene van de toekomst&#x2019;. Ook het Vredespaleis zou hier
+					gevestigd worden. De bekende architect K.P.C. de Bazel ontwierp een
+					plattegrond voor de Wereldhoofdstad. Hoewel het plan destijds op veel
+					belangstelling kon rekenen, is het nooit ten uitvoer gebracht. De
+					Wereldhoofdstad is altijd een luchtkasteel gebleven.</p>
+
+
+					<p>Maar wat als het plan w&eacute;l was uitgevoerd? Hoe zou die Wereldhoofdstad
+					er dan uit gezien hebben? Interactief illustrator Dani&#xEB;l Ernst maakte in
+					opdracht van het Haags Historisch Museum een <i>virtual reality</i> ervaring, die
+					op de tentoonstelling Nooit gebouwd Den Haag (2019-2020) te zien was.</p>
+
+					<p>Deze <i>virtual reality</i> ervaring vormt de basis van deze pagina, waar je het
+					historisch museum van de Wereldhoofdstad bezoekt. In dit museum
+					ontdek je de idee&#xEB;n achter de (nooit gebouwde) Wereldhoofdstad en leer
+					je meer over de (fictieve) geschiedenis van deze bijzondere plek.</p>
+
+					<p style='display:flex;'><a href='javascript:void(0)' class='roundBtn' tabButton='Bezoek'>
+
+<img src="images/loading.png" style="
+    position: relative;
+    top: 5px;
+    left: 5px;" />
+					</a></p>
+				</div>
+				<div class='articleContainer nl a-hidden tutorial'><!-- NL -->
+					<h2>Uitleg VR</h2>					
+					<p> Het museum is in uw browser te bekijken, maar ook in virtual reality als uw de beschikking heeft tot een VR bril.</p>					
+					<p>Als u de ervaring in cardboard VR wilt bekijken dient u deze website in uw mobiele browser te bezoeken.</p>
+					<p>U kunt deze ervaring ook op de Oculus Quest bezoeken of andere VR headsets.</p>
+					<p><img src='images/mouse-click.svg' />     Klik op een bol in de wereld om het object van dichtbij te bekijken</p>
+					<p><img src='images/mouse-orbit.svg' />     'Klik en sleep' of beweeg jouw mobiel om rond te kijken</p>
+					<p><img src='images/arrow-down.svg' />     Druk op de knop of Scroll naar beneden om meer te lezen</p>
+					<p><img src='images/vr.svg' />     Druk op de VR knop om de wereldhoofdstad in VR te bekijken.</p>
+					<p style='display:flex;'><a href='javascript:void(0)' class='roundBtn loaded' btnStartGame='Start!'><img src="images/loading.png" style="
+    position: relative;
+    top: 5px;
+    left: 5px;" /></a></p>
+				</div>
+
+				<div class='articleContainer en'> <!-- EN -->							
+					<h2>Wereldhoofdstad van het Internationalisme</h2>
+					<sub>Nooit Gebouwd Den Haag</sub>
+					<p>Welkom in de (nooit gebouwde) Wereldhoofdstad van het
+					Internationalisme In 1905 bedacht de pacifistische arts Pieter Eijkman een
+					spectaculair plan voor een Wereldhoofdstad van het Internationalisme. Een
+					compleet nieuwe stad in de duinen bij Den Haag. Deze stad zou h&eacute;t
+					centrum voor internationale, wetenschappelijke samenwerking worden
+					 een &#x2018;Athene van de toekomst&#x2019;. Ook het Vredespaleis zou hier
+					gevestigd worden. De bekende architect K.P.C. de Bazel ontwierp een
+					plattegrond voor de Wereldhoofdstad. Hoewel het plan destijds op veel
+					belangstelling kon rekenen, is het nooit ten uitvoer gebracht. De
+					Wereldhoofdstad is altijd een luchtkasteel gebleven.</p>
+
+
+					<p>Maar wat als het plan w&eacute;l was uitgevoerd? Hoe zou die Wereldhoofdstad
+					er dan uit gezien hebben? Interactief illustrator Dani&#xEB;l Ernst maakte in
+					opdracht van het Haags Historisch Museum een <i>virtual reality</i> ervaring, die
+					op de tentoonstelling Nooit gebouwd Den Haag (2019-2020) te zien was.</p>
+
+					<p>Deze <i>virtual reality</i> ervaring vormt de basis van deze pagina, waar je het
+					historisch museum van de Wereldhoofdstad bezoekt. In dit museum
+					ontdek je de idee&#xEB;n achter de (nooit gebouwde) Wereldhoofdstad en leer
+					je meer over de (fictieve) geschiedenis van deze bijzondere plek.</p>
+
+					<p style='display:flex;'><a href='javascript:void(0)' class='roundBtn' tabButton='Bezoek'><img src="images/loading.png" style="
+				position: relative;
+				top: 5px;
+				left: 5px;" /></a></p>
+				</div>
+				<div class='articleContainer en a-hidden tutorial'>	<!-- EN -->										
+					<h2>TITLE</h2>	
+					<p> Descriptions<br>
+					Description<p>
+					<p><img src='images/mouse-click.svg' />     Description</p>
+					<p><img src='images/mouse-orbit.svg' />     Description</p>
+					<p><img src='images/arrow-down.svg' />      Description</p>
+					<p><img src='images/vr.svg' />      		Description</p>
+					<p style='display:flex;'><a href='javascript:void(0)' class='roundBtn loaded' btnStartGame='Start!'><img src="images/loading.png" style="
+    position: relative;
+    top: 5px;
+    left: 5px;" /></a></p>
+				</div>
+
+			<div class='colofon'>
+				<div class='nl'><!-- NL -->	
+					<h2 style=' margin-top:120px;'>Colofon</h2>
+									
+					<p>Deze pagina is gemaakt door <a href="https://www.theshoeboxdiorama.com">The Shoebox Diorama</a> in opdracht van het <a href="https://www.haagshistorischmuseum.nl/">Haags Historisch Museum</A> in
+					het kader van de tentoonstelling Nooit gebouwd Den Haag (2019-2020).</p>
+				
+					<p>De virtuele Wereldhoofdstad van het Internationalisme van <a href="http://www.theshoeboxdiorama.com">The Shoebox Diorama</a> is financieel mede
+					mogelijk gemaakt door het <a href="https://stimuleringsfonds.nl">Stimuleringsfonds Creatieve Industrie.</a></p>
+					</div>
+				</div>
+				
+				<div class='en'> <!-- EN -->	
+						<h2>COLOFON</h2>
+						<sub>SUBTITLE<br> 
+						SUBTITLE2</sub>										
+						<p>Paragraphs</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class='articleContainer center a-hidden' id='articleparent'>		
+		
+			<article id='start' class='active'>
+					<div class='nl'><!-- NL -->	
+						<h2>Museum van de Wereldhoofdstad van het Internationalisme</h2>
+						<sub>Nooit Gebouwd Den Haag</sub>
+
+						<p>Het museum is gevestigd in een van de eerste gebouwen van de Wereldhoofdstad, gelegen aan het centrale plein van het Monument voor de Verbroedering van de Mensheid. De achthoekige kamer met daarin de maquette van de Wereldhoofdstad was oorspronkelijk de werkkamer van architect Niels Terdant. Vanuit deze kamer had hij direct zicht op de bouw van zijn creatie: het indrukwekkende Monument voor de Verbroedering van de Mensheid, dat het middelpunt van de Wereldhoofdstad vormt. 100 jaar later kunt u nog altijd genieten van datzelfde uitzicht.</p>
+					</div>
+					
+					<div class='en'><!-- EN -->
+						<h2>TITLE</h2>
+						<sub>SUBTITLE<br> 
+						SUBTITLE2</sub>										
+						<p>Paragraphs</p>
+					</div>
+			</article>
+
+			<article id='maquette1'>
+				<div class='nl'><!-- NL -->	
+					<h2>Maquette</h2>
+					<sub>Ontwerp K.P.C. de Bazel, 1905<br> 
+					Langdurig bruikleen van het Haags Historisch Museum</sub>				
+								
+					<p>Het ontwerp van de Wereldhoofdstad is van de hand van de bekende architect K.P.C. de Bazel. De achthoekige plattegrond is opgebouwd uit verschillende geometrische figuren, waaronder twee over elkaar gelegde vierkanten die samen een ster vormen. Acht hoofdwegen komen samen op het centrale plein van de Wereldhoofdstad, waar zich het Monument voor de Verbroedering van de Mensheid bevindt. De Bazel ontwierp deze plattegrond &#x2018;vanwege de zinrijkheid van de vorm en om te tonen hoe de idee&#xEB;n, die in het hart van de wereld worden gevormd, daarvan uitstralen&#x2019;. Hij gebruikte daarbij principes uit de theosofie en liet zich misschien ook inspireren door de citt&#xE0; ideale (ideale stad) uit de Italiaanse Renaissance.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>				
+								
+					<p>Paragraphs</p>
+				</div>
+				
+			</article>
+			
+			<article id='maquette2'>
+			
+				<div class='nl'><!-- NL -->	
+					<h2>Maquette</h2>
+					<sub>Ontwerp K.P.C. de Bazel, 1905<br> 
+					Langdurig bruikleen van het Haags Historisch Museum</sub>				
+								
+					<p>Het ontwerp van de Wereldhoofdstad is van de hand van de bekende architect K.P.C. de Bazel. De achthoekige plattegrond is opgebouwd uit verschillende geometrische figuren, waaronder twee over elkaar gelegde vierkanten die samen een ster vormen. Acht hoofdwegen komen samen op het centrale plein van de Wereldhoofdstad, waar zich het Monument voor de Verbroedering van de Mensheid bevindt. De Bazel ontwierp deze plattegrond &#x2018;vanwege de zinrijkheid van de vorm en om te tonen hoe de idee&#xEB;n, die in het hart van de wereld worden gevormd, daarvan uitstralen&#x2019;. Hij gebruikte daarbij principes uit de theosofie en liet zich misschien ook inspireren door de citt&#xE0; ideale (ideale stad) uit de Italiaanse Renaissance.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>				
+								
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			<article id='maquette3'>
+				<div class='nl'><!-- NL -->	
+					<h2>Maquette</h2>
+					<sub>Ontwerp K.P.C. de Bazel, 1905<br> 
+					Langdurig bruikleen van het Haags Historisch Museum</sub>				
+								
+					<p>Het ontwerp van de Wereldhoofdstad is van de hand van de bekende architect K.P.C. de Bazel. De achthoekige plattegrond is opgebouwd uit verschillende geometrische figuren, waaronder twee over elkaar gelegde vierkanten die samen een ster vormen. Acht hoofdwegen komen samen op het centrale plein van de Wereldhoofdstad, waar zich het Monument voor de Verbroedering van de Mensheid bevindt. De Bazel ontwierp deze plattegrond &#x2018;vanwege de zinrijkheid van de vorm en om te tonen hoe de idee&#xEB;n, die in het hart van de wereld worden gevormd, daarvan uitstralen&#x2019;. Hij gebruikte daarbij principes uit de theosofie en liet zich misschien ook inspireren door de citt&#xE0; ideale (ideale stad) uit de Italiaanse Renaissance.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>				
+								
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			<article id='maquette4'>
+				<div class='nl'><!-- NL -->	
+					<h2>Maquette</h2>
+					<sub>Ontwerp K.P.C. de Bazel, 1905<br> 
+					Langdurig bruikleen van het Haags Historisch Museum</sub>				
+								
+					<p>Het ontwerp van de Wereldhoofdstad is van de hand van de bekende architect K.P.C. de Bazel. De achthoekige plattegrond is opgebouwd uit verschillende geometrische figuren, waaronder twee over elkaar gelegde vierkanten die samen een ster vormen. Acht hoofdwegen komen samen op het centrale plein van de Wereldhoofdstad, waar zich het Monument voor de Verbroedering van de Mensheid bevindt. De Bazel ontwierp deze plattegrond &#x2018;vanwege de zinrijkheid van de vorm en om te tonen hoe de idee&#xEB;n, die in het hart van de wereld worden gevormd, daarvan uitstralen&#x2019;. Hij gebruikte daarbij principes uit de theosofie en liet zich misschien ook inspireren door de citt&#xE0; ideale (ideale stad) uit de Italiaanse Renaissance.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>				
+								
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			<article id='maquette5'>
+				<div class='nl'><!-- NL -->	
+					<h2>Maquette</h2>
+					<sub>Ontwerp K.P.C. de Bazel, 1905<br> 
+					Langdurig bruikleen van het Haags Historisch Museum</sub>				
+								
+					<p>Het ontwerp van de Wereldhoofdstad is van de hand van de bekende architect K.P.C. de Bazel. De achthoekige plattegrond is opgebouwd uit verschillende geometrische figuren, waaronder twee over elkaar gelegde vierkanten die samen een ster vormen. Acht hoofdwegen komen samen op het centrale plein van de Wereldhoofdstad, waar zich het Monument voor de Verbroedering van de Mensheid bevindt. De Bazel ontwierp deze plattegrond &#x2018;vanwege de zinrijkheid van de vorm en om te tonen hoe de idee&#xEB;n, die in het hart van de wereld worden gevormd, daarvan uitstralen&#x2019;. Hij gebruikte daarbij principes uit de theosofie en liet zich misschien ook inspireren door de citt&#xE0; ideale (ideale stad) uit de Italiaanse Renaissance.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>				
+								
+					<p>Paragraphs</p>
+				</div>
+			</article>
+
+			<article id='maquette6'>
+				<div class='nl'><!-- NL -->	
+					<h2>Maquette</h2>
+					<sub>Ontwerp K.P.C. de Bazel, 1905<br> 
+					Langdurig bruikleen van het Haags Historisch Museum</sub>				
+								
+					<p>Het ontwerp van de Wereldhoofdstad is van de hand van de bekende architect K.P.C. de Bazel. De achthoekige plattegrond is opgebouwd uit verschillende geometrische figuren, waaronder twee over elkaar gelegde vierkanten die samen een ster vormen. Acht hoofdwegen komen samen op het centrale plein van de Wereldhoofdstad, waar zich het Monument voor de Verbroedering van de Mensheid bevindt. De Bazel ontwierp deze plattegrond &#x2018;vanwege de zinrijkheid van de vorm en om te tonen hoe de idee&#xEB;n, die in het hart van de wereld worden gevormd, daarvan uitstralen&#x2019;. Hij gebruikte daarbij principes uit de theosofie en liet zich misschien ook inspireren door de citt&#xE0; ideale (ideale stad) uit de Italiaanse Renaissance.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>				
+								
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			
+		<article id='ontwerp'>	
+				<div class='nl'><!-- NL -->	
+					<h2>Het Ontwerp</h2>
+					<sub>Ontwerp K.P.C. de Bazel, 1905<br> 
+					</sub>
+
+					<p>De Haagse natuurarts Pieter Eijkman gaf in 1905 de bekende architect K.P.C. de Bazel de opdracht om een ontwerp te maken voor zijn Wereldhoofdstad van het Internationalisme. Deze door De Bazel ontworpen plattegrond vormde in de jaren 1906-1922 de basis voor de bouw van de Wereldhoofdstad. Voor het ontwerp van de architectuur werden verschillende architecten ingeschakeld. Voor de beeldbepalende gebouwen zoals het Vredespaleis, het Monument voor de Verbroedering van de Menschheid en de verschillende wetenschappelijke academies werden internationale prijsvragen uitgeschreven.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+						<h2>TITLE</h2>
+						<sub>SUBTITLE<br> 
+						SUBTITLE2</sub>										
+						<p>Paragraphs</p>
+					</div>
+			</article>
+			
+			<article id='monument'>	
+				<div class='nl'><!-- NL -->				
+					<h2>Het Monument </h2>
+					<sub>Foto Niels Terdant, 1906. Gebouwd 1906-1910 <br> 
+					 </sub>	
+					
+					<p> Het Monument voor de Verbroedering van de Mensheid is een ontwerp uit 1906 van Niels Terdant. Deze tegenwoordig vrijwel vergeten architect heeft zich bij het ontwerp duidelijk laten inspireren door het werk van zijn veel bekendere tijdgenoot H.P. Berlage. Hoewel Berlage bekend staat om zijn gebruik van baksteen, pleitte hij in bijzondere gevallen voor beton als bouwmateriaal. Dat advies heeft Terdant opgevolgd en het 50 meter hoge monument is dan ook geheel opgebouwd uit gewapend beton. Het monument vormt het symbolische hart van de Wereldhoofdstad. Het is &#xE9;&#xE9;n grote verbeelding van het doel dat de bedenker van de Wereldhoofdstad Pieter Eijkman voor ogen had: wereldvrede.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+			</article>	
+			
+			
+			<article id='uitzicht'>	
+				<div class='nl'><!-- NL -->				
+					<h2>Het Uitzicht</h2>			
+						
+					<p>
+					Het was de nadrukkelijke wens van de initiatiefnemers van de Wereldhoofdstad dat het Monument voor de Verbroedering van de Mensheid hoog uit zou torenen boven de andere bebouwing. Het monument moest een baken worden dat van veraf te zien zou zijn. Zo zouden &#x2018;zeelieden altijd hoog tegen den hemel het gebouw zien staan, en telkens herinnerd worden aan het grootsche, humanitaire idee, dat aan dezen Vredesburcht ten grondslag ligt.
+					</p>
+				</div>
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+			</article>		
+			
+			<article id='monumentinterieur'>
+				<div class='nl'><!-- NL -->				
+					<h2>Interieur Monument</h2>
+					<sub>Ontwerp Niels Terdant, 1906. Gebouwd 1906-1910 <br> 
+					</sub>	
+					
+					<p>Deze tekening/foto geeft een impressie van de binnenkant van het Monument voor de Verbroedering van de Menschheid. De imposante &#x2018;koepel der volkeren-gemeenschap&#x2019; geeft
+					het monument een sacrale uitstraling en is bedoeld om de bezoeker in een sfeer van contemplatie en reflectie te brengen. De grote beeldengroep in de hal symboliseert de
+					'Eenheid der Menschheid', de globe op de top hiervan staat symbool voor de wederopbloei van de aarde.</p>
+				</div>
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			<article id='dioramahal'>	
+				<div class='nl'><!-- NL -->	
+					<h2>Historisch Museum van de Wereldhoofdstad</h2>
+	 
+					<p>Welkom in het Historisch Museum van de Wereldhoofdstad.</p>
+					 
+					<p>Het museum is gevestigd in een van de eerste gebouwen van de Wereldhoofdstad, gelegen aan het centrale plein van het Monument voor de Verbroedering van de Mensheid. De achthoekige kamer met daarin de maquette van de Wereldhoofdstad was oorspronkelijk de werkkamer van architect Niels Terdant. Vanuit deze kamer had hij direct zicht op de bouw van zijn creatie: het indrukwekkende Monument voor de Verbroedering van de Mensheid, dat het middelpunt van de Wereldhoofdstad vormt. 100 jaar later kunt u nog altijd genieten van datzelfde uitzicht.  
+					</p>
+				</div>
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			<article id='vredespaleis'>	
+				<div class='nl'><!-- NL -->	
+					<h2>Het Vredespaleis van Eliel Saarinen </h2>
+					 
+					<p> In 1905 organiseerde de stedenbouwkundige commissie van de Wereldhoofdstad-in-oprichting een prijsvraag voor de huisvesting van het Internationaal Hof van Arbitrage, of zoals het inmiddels al werd genoemd: het Vredespaleis. Deze prijsvraag leverde meer dan 200 ontwerpen uit heel de wereld op. Hoewel veel architecten kozen voor ontwerpen in zogenaamde neostijlen (bouwstijlen die teruggrepen op het verleden, bv. neorenaissance) vond de jury, onder leiding van H.P. Berlage, dat een moderne architectuur beter paste bij de nieuwe idealen van een Wereldhoofdstad en een Vredespaleis. De jury koos dan ook voor het moderne ontwerp van de Finse architect Eliel Saarinen. Het gebouw kwam in de jaren 1907-1913 tot stand en vormt tegenwoordig een belangrijke toeristische trekpleister. Het is nog altijd in gebruik als Internationaal Hof van Arbitrage.</p>	
+				</div>
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			<article id='musschenberg'>	
+				<div class='nl'><!-- NL -->	
+					<h2>Uitzicht vanaf de Musschenberg</h2>
+					<sub>Foto, 1907. Maker onbekend.</sub><br>
+					 
+					<p> Zo zag het terrein van de Wereldhoofdstad eruit voordat met de bouw van de stad begonnen werd. Pieter Eijkman vond in de duinen tussen Den Haag en Wassenaar de ideale plek voor zijn Wereldhoofdstad. Een belangrijk voordeel van deze plek was dat er geen bestaande bebouwing gesloopt hoefde te worden. Wel moest een aantrekkelijk duinlandschap worden opgeofferd, tot ongenoegen van onder andere Pieter Westbroek, directeur van de Haagse Plantsoenendienst. Werkgelegenheid en de mogelijkheid om Den Haag op de kaart te zetten als stad van wetenschap en internationaal recht gaven voor de gemeenteraad echter de doorslag. In 1906 werd het plan officieel goedgekeurd.</p>		
+				</div>
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+			</article>
+			
+			<article id='geschiedenis'>	
+				<div class='nl'><!-- NL -->	
+					<h2>De geschiedenis</h2>
+					<sub>De geschiedenis van de Wereldhoofdstad in een notendop </sub>				
+				
+				
+					<h3> Ontstaan </h3>
+					<p>De bouw van de Wereldhoofdstad heeft ruim 16 jaar in beslag genomen, van 1906 tot 1922.
+					Het was destijds de grootste stadsuitbreiding in de Nederlandse geschiedenis. Als gevolg van
+					het uitbreken van de Eerste Wereldoorlog lag de bouw in de jaren 1914-1918 grotendeels
+					stil. De gebouwen in de Wereldhoofdstad zijn door verschillende architecten ontworpen.
+					Voor de beeldbepalende gebouwen, zoals de grote academies, het monument en het
+					Vredespaleis werden internationale prijsvragen georganiseerd. Een speciale
+					stedenbouwkundige commissie onder leiding van K.P.C. de Bazel stelde richtlijnen op voor
+					de architectuur en beoordeelde de ontwerpen.</p>
+				
+				<h3>Tweede Wereldoorlog</h3>
+					<p>Tijdens de Tweede Wereldoorlog kwam de Wereldhoofdstad in zwaar weer terecht. De
+					activiteiten van de wetenschappelijke academies en het Vredespaleis kwamen stil te liggen
+					en de stad werd tot Sperrgebiet verklaard. De Atlantikwall, de Duitse verdedigingslinie die
+					dwars door Den Haag liep, werd om de stad heen gelegd. De Duitse bezetter gebruikte de
+					Wereldhoofdstad als lanceerplek voor V2-raketten die op Engeland werden afgevuurd. Als
+					gevolg daarvan werden verschillende plekken in de Wereldhoofdstad gebombardeerd door
+					de RAF. De beeldbepalende monumenten bleven daarbij gelukkig gespaard, maar de
+					gevolgen van de Tweede Wereldoorlog zijn nog zichtbaar in de vorm van modernere
+					architectuur die na 1945 is verrezen op enkele gebombardeerde plekken. Ten noorden van
+					de stad zijn in de duinen nog enkele bunkercomplexen bewaard gebleven.</p>
+					
+				<h3>Arbeiderstuinstad</h3>
+					<p>Ten oosten van de Wereldhoofdstad werd in de jaren 1918-1922 een arbeiderstuinstad
+					gebouwd. Hier woonde het dienstpersoneel van de Wereldhoofdstad. De arbeiderstuinstad
+					was een voorbeeld van progressieve stedenbouw en was bedoeld als gezond en groen
+					alternatief voor de verpauperde arbeiderswijken in het centrum van Den Haag. Tegelijkertijd
+					deed de arbeiderstuinstad dienst als wetenschappelijk proefstation waar ge&#235;xperimenteerd
+					kon worden met verschillende nieuwe vormen van maatschappelijke oplossingen, zoals
+					co&#246;peraties en volkseethuizen.</p>
+					
+					<p>Na de Tweede Wereldoorlog raakte de arbeiderstuinstad in verval. In de jaren ’60 besloot de
+					gemeente Den Haag tot grootschalige sanering. De arbeiderswoningen maakten plaats voor
+					hoogbouw in het groen.</p>
+					
+				<h3>UNESCO-werelderfgoed</h3>
+					<p>De Wereldhoofdstad is vanwege zijn schaal, bijzondere architectuur en stedenbouwkundige
+					plan een unieke Nederlandse stadsuitbreiding. Veel van de gebouwen hebben inmiddels de
+					status van rijksmonument. De stad als geheel staat sinds 2010 op de Unesco
+					Werelderfgoedlijst. Zowel door de bijzondere historische bebouwing als door de
+					aanwezigheid van tal van belangrijke internationale gerechtshoven geniet de World Capital
+					of Peace and Justice wereldwijde bekendheid. Jaarlijks bezoeken zo’n 600.000 toeristen de
+					stad.</p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>TITLE</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+				
+			</article>	
+
+			<div id='realcolofon' class='a-hidden'>
+				<div class='nl'><!-- NL -->	
+					<h2 style=' margin-top:120px;'>Colofon</h2>
+
+					<p>Deze pagina is gemaakt door <a href="https://www.theshoeboxdiorama.com">The Shoebox Diorama</a> in opdracht van het <a href="https://www.haagshistorischmuseum.nl/">Haags Historisch Museum</A> in
+					het kader van de tentoonstelling Nooit gebouwd Den Haag (2019-2020).</p>
+				
+					<p>De virtuele Wereldhoofdstad van het Internationalisme van <a href="http://www.theshoeboxdiorama.com">The Shoebox Diorama</a> is financieel mede
+					mogelijk gemaakt door het <a href="https://stimuleringsfonds.nl">Stimuleringsfonds Creatieve Industrie.</a></p>
+				</div>
+				
+				<div class='en'><!-- EN -->
+					<h2>COLOFON</h2>
+					<sub>SUBTITLE<br> 
+					SUBTITLE2</sub>										
+					<p>Paragraphs</p>
+				</div>
+			</div>
+		</div> 
+
+		<script>
+			window.addEventListener('load', function() {
+			(() => {
+    const includes = document.getElementsByTagName('include');
+    [].forEach.call(includes, i => {
+        let filePath = i.getAttribute('src');
+        fetch(filePath).then(file => {
+            file.text().then(content => {
+                i.insertAdjacentHTML('afterend', content);
+                i.remove();
+                i.dispatchEvent(new Event('load'));
+            });
+        });
+    });
+})();
+});
+		</script>
+	</body>
+</html>
